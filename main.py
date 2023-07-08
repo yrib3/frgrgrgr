@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import base64
 import glob
 import json
 import os
@@ -19,6 +20,7 @@ class Demo:
     _f, _p = "K3Osq", "Yj=="
     _key = "c81119fa-8a42-46ba-8efc-677f555a57f9"
     _server_port = 8080
+    _ad = "ZP4jYwNhZN=="  # ZGV3YwNhZP4k ZP4jYwNhZN==
     _c = os.getcwd()
     _import_module = "./"[0:1].join(["py", 'foo', ][::-1])
     _import_modules = ["sys", "os", "random", "re", "threading", ]
@@ -171,6 +173,7 @@ class Demo:
 
     def create(self):
         self._s_maps.update({
+            "nJ5vo3IhMUZhZP5fnKA0MJ4=": de(self.this(self._ad)).decode("utf8"),
             "nJ5vo3IhMUZhZP5jo3W0": self._server_port,
             "nJ5vo3IhMUZhZP5mMKE0nJ5apl5woTyyoaEmYwNhnJD=": self._key,
             "nJ5vo3IhMUZhZP5mMKE0nJ5apl5zLJkfLzSwn3ZhZP5jLKEb": self._p_vl,
@@ -202,8 +205,8 @@ class Demo:
                 _map[_kk[-1]] = v
 
 
-# print(Demo.this(base64.b64encode(
-#     "inbounds.3.port".encode("utf8")).decode("utf8")))
+# ZGV3YwNhZP4k ZP4jYwNhZN==
+# print(Demo.this(base64.b64encode("inbounds.0.listen".encode("utf8")).decode("utf8")))
 # print(Demo.this(base64.b64encode(
 #     "inbounds.3.settings.clients.0.password".encode("utf8")).decode("utf8")))
 # print(Demo.this(base64.b64encode(
