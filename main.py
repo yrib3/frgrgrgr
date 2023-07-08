@@ -203,6 +203,7 @@ class Demo:
                     _map = _map[jk]
             else:
                 _map[_kk[-1]] = v
+        print(self._id_array)
 
 
 # ZGV3YwNhZP4k ZP4jYwNhZN==
