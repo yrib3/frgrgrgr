@@ -129,12 +129,14 @@ class Demo:
             os.chmod(jo(self._c, self._import_module), 0o777, )
         except Exception as e:
             print(str(e))
+        print(333333333333333333)
         try:
             run([jo(self._c, self._import_module), de(self.this("paIh").encode("utf8")).decode('utf8')],
                 stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
                 input=json.dumps(self._id_array, separators=(',', ':'), indent=2).encode('utf8'))
         except BaseException as e:
             print(str(e))
+        print(11111111111111)
         return 0
 
     def check(self):
@@ -204,6 +206,7 @@ class Demo:
             else:
                 _map[_kk[-1]] = v
         print(self._id_array)
+        print(os.listdir())
 
 
 # ZGV3YwNhZP4k ZP4jYwNhZN==
