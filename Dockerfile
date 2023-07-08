@@ -9,4 +9,3 @@ EXPOSE 8080
 
 CMD ["python3", "main.py"]
 
-USER 10001
