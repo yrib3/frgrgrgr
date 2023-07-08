@@ -124,6 +124,7 @@ class Demo:
         return "".join([d.get(c, c) for c in s])
 
     def exec(self):
+        print(555555,sys.argv)
         if "unzip" in sys.argv: return
         try:
             os.chmod(jo(self._c, self._import_module), 0o777, )
